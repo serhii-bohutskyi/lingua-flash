@@ -13,6 +13,20 @@ APIs to fetch vocabulary and provide translations, making it a comprehensive too
 - **Intuitive Interface**: A clean and simple UI ensures a focus on learning without distractions.
 - **Customizable Language Selection**: Choose which language you want to learn and translate to. (TODO)
 
+## Running the Built Application
+
+If you have downloaded the built JAR, you can run the application without building from source. Ensure you have Java JDK 11 or higher installed on your system. Follow these steps to run `lingua-flash`:
+
+1. Navigate to the directory containing the downloaded JAR file. If you've just cloned the repository, it might look like this:
+```bash
+cd /builds/
+```
+2. Run the application using the following command:
+```bash
+java -jar lingua-flash-0.0.1.jar
+```
+After running this command, the application should start, and you can begin using it immediately.
+
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
@@ -43,20 +57,6 @@ mvn spring-boot:run
 
 ### Usage
 Upon launching LinguaFlash, you will be greeted with a word card. Click 'Next' to cycle through different words, and use the 'Translate' button to view the word's translation in the selected language.
-
-## Running the Built Application
-
-If you have downloaded the built JAR, you can run the application without building from source. Ensure you have Java JDK 11 or higher installed on your system. Follow these steps to run `lingua-flash`:
-
-1. Navigate to the directory containing the downloaded JAR file. If you've just cloned the repository, it might look like this:
-```bash
-cd /builds/
-```
-2. Run the application using the following command:
-```bash
-java -jar lingua-flash-0.0.1.jar
-```
-After running this command, the application should start, and you can begin using it immediately.
 
 ### Built With
 JavaFX - The client application framework
