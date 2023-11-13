@@ -1,0 +1,8 @@
+.big-margin {
+    -fx-padding: 10;
+
+
+}
+.small-margin {
+    -fx-padding: 5;
+}

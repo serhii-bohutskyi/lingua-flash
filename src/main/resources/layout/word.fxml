@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bohutskyi.fx.linguaflash.controller.MainController">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="428.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <AnchorPane prefHeight="600.0" prefWidth="98.0">
+                     <children>
+                        <Label layoutX="12.0" layoutY="27.0" text="Word" />
+                        <Label layoutX="14.0" layoutY="77.0" text="Forms" />
+                        <Label layoutX="11.0" layoutY="148.0" prefHeight="44.0" prefWidth="72.0" text="What is it" textAlignment="CENTER" wrapText="true" />
+                        <Label layoutX="11.0" layoutY="287.0" prefHeight="44.0" prefWidth="72.0" text="Description" textAlignment="CENTER" wrapText="true" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="600.0" prefWidth="350.0">
+               <children>
+                  <AnchorPane prefHeight="67.0" prefWidth="339.0">
+                     <children>
+                        <TextField fx:id="wordLabel" layoutX="10.0" layoutY="6.0" prefHeight="56.0" prefWidth="330.0" styleClass="big-margin" stylesheets="@style.css">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <Pane prefHeight="70.0" prefWidth="350.0">
+                     <children>
+                        <TextArea fx:id="formsTextArea" layoutX="10.0" prefHeight="70.0" prefWidth="330.0" styleClass="small-margin" stylesheets="@style.css" wrapText="true" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextArea>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="105.0" prefWidth="350.0" styleClass="small-margin" stylesheets="@style.css">
+                     <children>
+                        <TextArea fx:id="shortTextArea" layoutX="10.0" layoutY="6.0" prefHeight="134.0" prefWidth="330.0" styleClass="small-margin" stylesheets="@style.css" wrapText="true" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextArea>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="242.0" prefWidth="350.0">
+                     <children>
+                        <TextArea fx:id="longTextArea" layoutX="10.0" layoutY="45.0" prefHeight="302.0" prefWidth="330.0" wrapText="true" HBox.hgrow="ALWAYS">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </TextArea>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
